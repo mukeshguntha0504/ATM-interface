@@ -1,12 +1,13 @@
 **ATM Interface in Java**
-This repository contains a simple implementation of an ATM (Automated Teller Machine) interface in Java. The code provides functionalities such as 
--depositing money
--withdrawing money
--transferring money
--checking transaction history
--exiting the system.
+This repository contains a simple implementation of an ATM (Automated Teller Machine) interface in Java. The code provides functionalities such as depositing money, withdrawing money, transferring money, checking transaction history, and exiting the system.
 
-**Code Structure**
+**Features**
+Deposit: Allows users to deposit money into the ATM.
+Withdraw: Enables users to withdraw money from the ATM, provided they have sufficient balance.
+Transfer Money: Simulates transferring money from the ATM to another account.
+Transaction History: Displays a list of all transactions performed.
+Exit: Allows users to exit the ATM interface.
+Code Structure
 The code is structured into two main classes:
 
 Transaction: Represents individual transactions with attributes such as type (e.g., Deposit, Withdrawal) and amount.
@@ -24,15 +25,15 @@ To use this ATM interface:
 Clone the repository:
 
 bash
-copy code
+Copy code
 git clone https://github.com/your-username/atm-interface-java.git
 Compile the Java files:
 
-copy code
+Copy code
 javac ATM.java
 Run the ATM interface:
 
-copy code
+Copy code
 java ATM
 Follow the on-screen prompts to perform transactions:
 
@@ -43,13 +44,6 @@ Enter option 4 to view transaction history.
 Enter option 5 to exit the ATM interface.
 Example
 Here’s an example session with the ATM interface:
-
-**Features**
-Deposit: Allows users to deposit money into the ATM.
-Withdraw: Enables users to withdraw money from the ATM, provided they have sufficient balance.
-Transfer Money: Simulates transferring money from the ATM to another account.
-Transaction History: Displays a list of all transactions performed.
-Exit: Allows users to exit the ATM interface.+
 
 **Notes**
 This code is a basic implementation and does not include advanced features like authentication, multi-threading, or database integration.
