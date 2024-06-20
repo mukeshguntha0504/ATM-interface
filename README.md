@@ -1,91 +1,60 @@
-ATM Interface in Java
-This repository contains a simple implementation of an ATM (Automated Teller Machine) interface in Java. The code provides functionalities such as depositing money, withdrawing money, transferring money, checking transaction history, and exiting the system.
 
-Features
-Deposit: Allows users to deposit money into the ATM.
-Withdraw: Enables users to withdraw money from the ATM, provided they have sufficient balance.
-Transfer Money: Simulates transferring money from the ATM to another account.
-Transaction History: Displays a list of all transactions performed.
-Exit: Allows users to exit the ATM interface.
-Code Structure
-The code is structured into two main classes:
+## ATM Interface in Java
 
-Transaction: Represents individual transactions with attributes such as type (e.g., Deposit, Withdrawal) and amount.
+This repository contains a simple Java implementation of an ATM (Automated Teller Machine) interface. The code allows users to perform basic banking operations such as depositing money, withdrawing money (with sufficient balance), transferring money, checking transaction history, and exiting the system.
 
-ATM: Manages the ATM functionalities and transaction history. Key methods include:
+### Code Structure
 
-deposit(double amount): Adds money to the ATM balance and records the transaction.
-withdraw(double amount): Deducts money from the ATM balance if sufficient funds are available and records the transaction.
-transfer(double amount): Simulates transferring money to another account.
-displayTransactionHistory(): Prints out all transactions recorded.
-main(String[] args): Simulates the ATM interface with a menu-driven approach using Scanner for user input.
-Usage
-To use this ATM interface:
+The repository consists of two main Java classes:
 
-Clone the repository:
+1. **Transaction**: Represents individual transactions with attributes like type (Deposit, Withdrawal, Transfer) and amount.
+   
+2. **ATM**: Manages the ATM functionalities:
+   - `deposit(double amount)`: Adds the specified amount to the ATM balance and records a deposit transaction.
+   - `withdraw(double amount)`: Deducts the specified amount from the ATM balance if sufficient funds are available and records a withdrawal transaction.
+   - `transfer(double amount)`: Simulates transferring money to another account.
+   - `displayTransactionHistory()`: Prints all recorded transactions.
+   - `main(String[] args)`: Implements the main ATM interface, where users interact via a menu-driven system using `Scanner` for input.
 
-bash
-Copy code
-git clone https://github.com/your-username/atm-interface-java.git
-Compile the Java files:
+### Usage
 
-Copy code
-javac ATM.java
-Run the ATM interface:
+To run the ATM interface:
 
-Copy code
-java ATM
-Follow the on-screen prompts to perform transactions:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/atm-interface-java.git
+   ```
 
-Enter option 1 to deposit money.
-Enter option 2 to withdraw money.
-Enter option 3 to transfer money.
-Enter option 4 to view transaction history.
-Enter option 5 to exit the ATM interface.
-Example
-Here’s an example session with the ATM interface:
+2. **Compile the Java files**:
+   ```bash
+   javac ATM.java
+   ```
 
-markdown
-Copy code
-ATM Menu:
-1. Deposit
-2. Withdraw
-3. Transfer Money
-4. Transaction History
-5. Exit
-Choose an option: 1
-Enter amount to deposit: 500
-500.0 deposited successfully.
+3. **Run the ATM interface**:
+   ```bash
+   java ATM
+   ```
 
-ATM Menu:
-1. Deposit
-2. Withdraw
-3. Transfer Money
-4. Transaction History
-5. Exit
-Choose an option: 2
-Enter amount to withdraw: 200
-200.0 withdrawn successfully.
+4. **Follow the on-screen prompts**:
+   - Select `1` to deposit money.
+   - Select `2` to withdraw money.
+   - Select `3` to transfer money.
+   - Select `4` to view transaction history.
+   - Select `5` to exit the ATM interface.
 
-ATM Menu:
-1. Deposit
-2. Withdraw
-3. Transfer Money
-4. Transaction History
-5. Exit
-Choose an option: 4
-Transaction History:
-Transaction{type='Deposit', amount=500.0}
-Transaction{type='Withdrawal', amount=200.0}
+### Example Session
 
-ATM Menu:
-1. Deposit
-2. Withdraw
-3. Transfer Money
-4. Transaction History
-5. Exit
-Choose an option: 5
-Exiting ATM. Thank you!
-Notes
-This code is a basic implementation and does not include advanced features like authentication, multi-threading, or database integration.
-Feel free to modify and extend the code according to your needs.
+Here is an example session demonstrating interactions with the ATM interface:
+
+### Features
+
+- **Deposit**: Allows users to add funds to their account.
+- **Withdraw**: Enables users to withdraw funds, provided their balance is sufficient.
+- **Transfer Money**: Simulates transferring money to another account (simplified for        demonstration).
+- **Transaction History**: Displays a list of all transactions conducted during the session.
+- **Exit**: Allows users to exit the ATM interface.
+
+### Notes
+
+- This repository serves as a basic example of an ATM interface and does not include advanced features such as authentication or database integration.
+- You are encouraged to modify and expand the codebase according to your specific requirements.
