@@ -24,12 +24,15 @@ To use this ATM interface:
 Clone the repository:
 
 bash
+copy code
 git clone https://github.com/your-username/atm-interface-java.git
 Compile the Java files:
 
+copy code
 javac ATM.java
 Run the ATM interface:
 
+copy code
 java ATM
 Follow the on-screen prompts to perform transactions:
 
